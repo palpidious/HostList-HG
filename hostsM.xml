@@ -516,6 +516,7 @@
 	<path-pattern>.*\.(jpg|png|gif)</path-pattern>
 	<interceptor>replace: '\.hu/', '.hu/kep/'</interceptor>
 	<link-search-pattern>SELF</link-search-pattern>
+	<interceptor>skip: /.*\/kep\/images\/.*/</interceptor>
 </host>
 
 </root>
