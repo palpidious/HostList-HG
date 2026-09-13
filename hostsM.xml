@@ -518,4 +518,10 @@
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
 
+<host id="hkcinema">
+	<domain>en.hkcinema.ru</domain>
+	<path-pattern>foto/.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
 </root>
