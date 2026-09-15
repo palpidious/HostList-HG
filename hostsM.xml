@@ -540,19 +540,8 @@
 <host id="thefappeningblog-forum">
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
-	<link-search-pattern>SELF</link-search-pattern>
-  <!-- 1. MODIFICA LA URL: Quitamos la barra final para que el sistema vea un archivo y no una carpeta -->
-	<interceptor>replace: '/$', ''</interceptor>
-
-  <!-- Divisor: A partir de aquí los interceptores solo afectan al nombre del archivo -->
-	<file-name-attribute></file-name-attribute>
-
-  <!-- 2. MODIFICA EL NOMBRE: Limpiamos el punto y el código numérico final -->
-	<interceptor>replace: '\.jpg\.\d+$', '.jpg'</interceptor>
-	<interceptor>replace: '\.jpeg\.\d+$', '.jpg'</interceptor>
-	<interceptor>replace: '\.png\.\d+$', '.png'</interceptor>
-	<interceptor>replace: '\.gif\.\d+$', '.gif'</interceptor>
-	<interceptor>replace: '\.webp\.\d+$', '.webp'</interceptor>
+	<link-search-pattern>class: bbImage</link-search-pattern>
+	<file-name-attribute>title</file-name-attribute>
 </host>
 
 <host id="thefappeningblog-video">
