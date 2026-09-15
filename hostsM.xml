@@ -541,8 +541,17 @@
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
+	<interceptor>replace: '/$', '?'</interceptor>
+
+  <!-- Divisor oficial: A partir de aquí modificamos el nombre extraído -->
 	<file-name-attribute></file-name-attribute>
-	<interceptor>expreg: '^$', 'imagen.jpg'</interceptor>
+
+  <!-- 2. CORRIGE LA EXTENSIÓN: Ahora que HG++ extrae un nombre (ej: archivo.jpg.123456), 
+       usamos tu patrón conocido para limpiar el código numérico sobrante -->
+	<interceptor>replace: '.jpg.', '.jpg'</interceptor>
+	<interceptor>replace: '.jpeg.', '.jpg'</interceptor>
+	<interceptor>replace: '.png.', '.png'</interceptor>
+	<interceptor>expreg: '\.\d+$', ''</interceptor>
 </host>
 
 <host id="thefappeningblog-video">
