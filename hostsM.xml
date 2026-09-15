@@ -542,7 +542,9 @@
 	<path-pattern>forum/attachments/.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
 	<file-name-attribute></file-name-attribute>
-	<interceptor>replace: '^.*/([^/]+\.(?:jpg|jpeg|png|gif|webp))\.\d+/$', '$1'</interceptor>	
+	<interceptor>replace: '.jpg\.\d+/', '.jpg'</interceptor>
+	<interceptor>replace: '.jpeg\.\d+/', '.jpg'</interceptor>
+	<interceptor>replace: '.png\.\d+/', '.png'</interceptor>	
 </host>
 
 <host id="thefappeningblog-video">
