@@ -541,8 +541,9 @@
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
+	<interceptor>replace: '/$', '?'</interceptor>
 	<file-name-attribute></file-name-attribute>
-	<interceptor>replace: '-(jpg|jpeg|png|gif|webp)\.\d+/', '.$1'</interceptor>
+	<interceptor>expreg: '^$', 'imagen.$EXT$'</interceptor>
 </host>
 
 <host id="thefappeningblog-video">
