@@ -541,14 +541,7 @@
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
-</host>
-
-<host id="thefappeningblog-forum-em">
-	<domain>thefappeningblog.com</domain>
-	<path-pattern>forum/attachments/.+</path-pattern>
-	<link-search-pattern>class: bbImage</link-search-pattern>
-	<link-attribute>src</link-attribute>
-	<file-name-attribute>alt</file-name-attribute>
+	<file-name-attribute></file-name-attribute>
 </host>
 
 <host id="thefappeningblog-video">
