@@ -524,4 +524,11 @@
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
 
+<host id="nudography">
+	<domain>nudography.com</domain>
+	<path-pattern>photos/news/.+</path-pattern>
+	<interceptor>replace: 'photos/news/([^/]+)/small', 'photos/news/$1/original'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
 </root>
