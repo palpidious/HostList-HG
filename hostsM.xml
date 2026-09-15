@@ -540,8 +540,7 @@
 <host id="thefappeningblog-forum">
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
-	<link-search-pattern>CLASS: bbImage</link-search-pattern>
-	<file-name-attribute>title</file-name-attribute>
+	<link-search-pattern>SELF</link-search-pattern>
 </host>
 
 <host id="thefappeningblog-video">
