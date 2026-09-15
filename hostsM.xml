@@ -531,4 +531,28 @@
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
 
+<host id="thefappeningblog">
+	<domain>thefappeningblog.com</domain>
+	<path-pattern>wp-content/uploads/.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="thefappeningblog-forum">
+	<domain>thefappeningblog.com</domain>
+	<path-pattern>forum/attachments/.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="thefappeningblog-video">
+	<domain>thefappeningblog.com</domain>
+	<path-pattern>forum/data/video/.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="reddit">
+	<domain>preview.redd.it</domain>
+	<path-pattern>.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+	
 </root>
