@@ -541,9 +541,6 @@
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
-	<interceptor>replace: '/$', '?'</interceptor>
-
-  <!-- Divisor oficial: A partir de aquí modificamos el nombre extraído -->
 	<file-name-attribute></file-name-attribute>
 	<interceptor>replace: '^$', '.jpg'</interceptor>
 </host>
