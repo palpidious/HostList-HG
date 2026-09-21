@@ -544,6 +544,10 @@
 	<interceptor>replace: '/$', '?'</interceptor>
 	<file-name-attribute></file-name-attribute>
 	<interceptor>replace: '-jpg.(.*)', '.jpg'</interceptor>
+	<interceptor>replace: '-jpeg.(.*)', '.jpeg'</interceptor>
+	<interceptor>replace: '-png.(.*)', '.png'</interceptor>
+	<interceptor>replace: '-gif.(.*)', '.gif'</interceptor>
+	<interceptor>replace: '-webp.(.*)', '.webp'</interceptor>
 </host>
 
 <host id="thefappeningblog-video">
