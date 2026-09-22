@@ -561,5 +561,12 @@
 	<path-pattern>.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
+
+<host id="imagehaha">
+	<domain-pattern>img\d+\.imagehaha.com</domain-pattern>
+	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
+	<interceptor>replace: '\.com/th/', '.com/i/'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
 	
 </root>
