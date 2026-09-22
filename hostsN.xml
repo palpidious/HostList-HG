@@ -563,10 +563,9 @@
 </host>
 
 <host id="imagehaha">
-	<domain-pattern>img\d+\.imagehaha.com</domain-pattern>
-	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
-	<interceptor>replace: '\.com/th/', '.com/i/'</interceptor>
-	<link-search-pattern>SELF</link-search-pattern>
+	<domain>imagehaha.com</domain>
+	<path-pattern>\w+/[^/"]+</path-pattern>
+	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
 </host>
 	
 </root>
