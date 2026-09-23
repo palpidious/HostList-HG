@@ -567,5 +567,19 @@
 	<path-pattern>\w+/[^/"]+</path-pattern>
 	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
 </host>
-	
+
+<host id="bellazon">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>class: ipsImage ipsImage_thumbnailed ipsRichText__align--block</link-search-pattern>
+	<link-attribute>data-full-image</link-attribute>
+</host>
+
+<host id="bellazon-alt">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>class: ipsAttachLink ipsAttachLink_image</link-search-pattern>
+	<link-attribute>data-fullurl</link-attribute>
+</host>
+
 </root>
