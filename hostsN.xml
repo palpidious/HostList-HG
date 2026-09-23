@@ -578,8 +578,8 @@
 <host id="bellazon-alt">
 	<domain>bellazon.com</domain>
 	<path-pattern>_$CURRENT$_</path-pattern>
-	<link-search-pattern>class: ipsAttachLink ipsAttachLink_image</link-search-pattern>
-	<link-attribute>data-fullurl</link-attribute>
+	<link-search-pattern>CSS query: a.ipsAttachLink</link-search-pattern>
+	<link-attribute>href</link-attribute>
 </host>
-
+	
 </root>
