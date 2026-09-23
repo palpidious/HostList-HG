@@ -571,7 +571,7 @@
 <host id="bellazon-duo">
 	<domain>bellazon.com</domain>
 	<path-pattern>_$CURRENT$_</path-pattern>
-	<link-search-pattern>class: ipsImage ipsImage_thumbnailed ipsRichText__align--block</link-search-pattern>
+	<link-search-pattern>CSS query: img.ipsImage</link-search-pattern>
 	<link-attribute>data-full-image</link-attribute>
 </host>
 
