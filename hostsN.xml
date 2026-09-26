@@ -595,5 +595,12 @@
 	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
 	<link-attribute>src</link-attribute>
 </host>
+
+<host id="picturelol">
+	<domain>picturelol.com</domain>
+	<path-pattern>.*</path-pattern>
+	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
+	<link-attribute>src</link-attribute>
+</host>
 	
 </root>
