@@ -588,5 +588,12 @@
 	<link-search-pattern>CSS query: source</link-search-pattern>
 	<link-attribute>src</link-attribute>
 </host>
+
+<host id="vipr">
+	<domain>vipr.im</domain>
+	<path-pattern>.*</path-pattern>
+	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
+	<link-attribute>src</link-attribute>
+</host>
 	
 </root>
