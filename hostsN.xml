@@ -582,6 +582,13 @@
 	<link-attribute>href</link-attribute>
 </host>
 
+<host id="bellazon-thumb">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: a.ipsThumb</link-search-pattern>
+	<link-attribute>href</link-attribute>
+</host>
+	
 <host id="bellazon-video">
 	<domain>bellazon.com</domain>
 	<path-pattern>_$CURRENT$_</path-pattern>
