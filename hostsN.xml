@@ -609,5 +609,12 @@
 	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
 	<link-attribute>src</link-attribute>
 </host>
+
+<host id="imx">
+	<domain>image.imx.to</domain>
+	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
+	<interceptor>replace: '\image.imx.to/u/t/', 'i02.imx.to/i/'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
 	
 </root>
