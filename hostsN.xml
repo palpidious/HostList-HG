@@ -623,5 +623,12 @@
 	<interceptor>replace: '\image.imx.to/u/t/', 'i01.imx.to/i001/i/'</interceptor>
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
+
+<host id="imx-2">
+	<domain>imx.to</domain>
+	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
+	<interceptor>replace: '\imx.to/upload/small/', 'i01.imx.to/i001/i/'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
 	
 </root>
