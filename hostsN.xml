@@ -630,5 +630,11 @@
 	<interceptor>replace: '\imx.to/upload/small/', 'i01.imx.to/i001/i/'</interceptor>
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
+
+<host id="listal">
+	<domain>listal.com</domain>
+	<path-pattern>viewimage/.*</path-pattern>
+	<link-search-pattern>class: pure-img</link-search-pattern>
+</host>
 	
 </root>
