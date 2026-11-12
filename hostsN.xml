@@ -636,5 +636,12 @@
 	<path-pattern>viewimage/.*</path-pattern>
 	<link-search-pattern>class: pure-img</link-search-pattern>
 </host>
-	
+
+<host id="pixho">
+	<domain>pixho.st</domain>
+	<path-pattern>show/.+</path-pattern>
+	<interceptor>replace: '\.org/', '.to/'</interceptor>
+	<link-search-pattern>ID: image</link-search-pattern>
+</host>
+
 </root>
