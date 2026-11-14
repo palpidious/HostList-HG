@@ -541,6 +541,13 @@
 	<domain>thefappeningblog.com</domain>
 	<path-pattern>forum/attachments/.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
+	<interceptor>replace: '/$', '?'</interceptor>
+	<file-name-attribute></file-name-attribute>
+	<interceptor>replace: '-jpg.(.*)', '.jpg'</interceptor>
+	<interceptor>replace: '-jpeg.(.*)', '.jpeg'</interceptor>
+	<interceptor>replace: '-png.(.*)', '.png'</interceptor>
+	<interceptor>replace: '-gif.(.*)', '.gif'</interceptor>
+	<interceptor>replace: '-webp.(.*)', '.webp'</interceptor>
 </host>
 
 <host id="thefappeningblog-video">
@@ -554,5 +561,100 @@
 	<path-pattern>.+</path-pattern>
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
+
+<host id="imagehaha">
+	<domain>imagehaha.com</domain>
+	<path-pattern>\w+/[^/"]+</path-pattern>
+	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
+</host>
+
+<host id="bellazon-duo">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: img.ipsImage</link-search-pattern>
+	<link-attribute>data-full-image</link-attribute>
+</host>
+
+<host id="bellazon-alt">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: a.ipsAttachLink</link-search-pattern>
+	<link-attribute>href</link-attribute>
+</host>
+
+<host id="bellazon-thumb">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: a.ipsThumb</link-search-pattern>
+	<link-attribute>href</link-attribute>
+</host>
 	
+<host id="bellazon-video">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: source</link-search-pattern>
+	<link-attribute>src</link-attribute>
+</host>
+
+<host id="vipr">
+	<domain>vipr.im</domain>
+	<path-pattern>.*</path-pattern>
+	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
+	<link-attribute>src</link-attribute>
+</host>
+
+<host id="picturelol">
+	<domain>picturelol.com</domain>
+	<path-pattern>.*</path-pattern>
+	<link-search-pattern>class: pic img img-responsive</link-search-pattern>
+	<link-attribute>src</link-attribute>
+</host>
+
+<host id="imx">
+	<domain>image.imx.to</domain>
+	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
+	<interceptor>replace: '\image.imx.to/u/t/', 'i02.imx.to/i/'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="image-2">
+	<domain>image.imx.to</domain>
+	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
+	<interceptor>replace: '\image.imx.to/u/t/', 'i01.imx.to/i001/i/'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="imx-2">
+	<domain>imx.to</domain>
+	<path-pattern>.*\.(jpg|jpeg|png|gif)</path-pattern>
+	<interceptor>replace: '\imx.to/upload/small/', 'i01.imx.to/i001/i/'</interceptor>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="listal">
+	<domain>listal.com</domain>
+	<path-pattern>viewimage/.*</path-pattern>
+	<link-search-pattern>class: pure-img</link-search-pattern>
+</host>
+
+<host id="pixho">
+	<domain>pixho.st</domain>
+	<path-pattern>show/.+</path-pattern>
+	<interceptor>replace: '\.org/', '.to/'</interceptor>
+	<link-search-pattern>ID: image</link-search-pattern>
+</host>
+
+<host id="imperiodefamosas">
+	<domain>imperiodefamosas.com</domain>
+	<path-pattern>Fotos/.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="bellazon">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: a</link-search-pattern>
+	<link-attribute>data-fullurl</link-attribute>
+</host>
+
 </root>
