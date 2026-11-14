@@ -644,4 +644,17 @@
 	<link-search-pattern>ID: image</link-search-pattern>
 </host>
 
+<host id="imperiodefamosas">
+	<domain>imperiodefamosas.com</domain>
+	<path-pattern>Fotos/.+</path-pattern>
+	<link-search-pattern>SELF</link-search-pattern>
+</host>
+
+<host id="bellazon">
+	<domain>bellazon.com</domain>
+	<path-pattern>_$CURRENT$_</path-pattern>
+	<link-search-pattern>CSS query: a</link-search-pattern>
+	<link-attribute>data-fullurl</link-attribute>
+</host>
+
 </root>
