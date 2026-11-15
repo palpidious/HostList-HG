@@ -650,7 +650,7 @@
 	<link-search-pattern>SELF</link-search-pattern>
 </host>
 
-<host id="bellazon">
+<host id="bellazon-master">
 	<domain>bellazon.com</domain>
 	<path-pattern>_$CURRENT$_</path-pattern>
 	<link-search-pattern>CSS query: a</link-search-pattern>
