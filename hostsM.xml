@@ -657,4 +657,10 @@
 	<link-attribute>data-fullurl</link-attribute>
 </host>
 
+	<host id="turboimagehost-new">
+		<domain>turboimagehost.com</domain>
+		<path-pattern>p/.+</path-pattern>
+		<link-search-pattern>ID: imageid</link-search-pattern>
+	</host>
+	
 </root>
